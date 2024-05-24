@@ -50,11 +50,6 @@ function displayFormData(formData) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-	// const storedFormData = localStorage.getItem("formData")
-	// if (storedFormData) {
-	// 	displayFormData(JSON.parse(storedFormData))
-	// }
-
 	document
 		.getElementById("simpleForm")
 		.addEventListener("submit", function (event) {
@@ -113,8 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 						console.log("Success message:", body);
 
 						alert("Form data submitted successfully!");
-
-						// localStorage.setItem("formData", JSON.stringify(formData));
 
 						displayFormData(formData);
 
