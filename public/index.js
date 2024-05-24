@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				gender: document.getElementById("gender").value,
 			};
 
-			fetch("http://localhost:5050/submit-form", {
+			fetch("https://form-validation-http-module.onrender.com/submit-form", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 						alert("Form data submitted successfully!");
 
-						localStorage.setItem("formData", JSON.stringify(formData))
+						localStorage.setItem("formData", JSON.stringify(formData));
 
 						displayFormData(formData);
 
