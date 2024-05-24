@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="/public/index.css" />
+		<title>A Simple Form</title>
+	</head>
+	<body>
+		<div class="overall">
+			<div>
+				<div class="mainHeader">
+					<h1>Simple HTML Form</h1>
+				</div>
+				<form id="simpleForm" method="post">
+					<label for="firstName" class="labelContainer inputNameFlex">
+						First Name:
+						<input
+							type="text"
+							id="firstName"
+							name="firstName"
+							placeholder="Enter your first Name"
+							class="inputField"
+							required
+						/>
+					</label>
+					<label for="lastName" class="labelContainer inputNameFlex">
+						Last Name:
+						<input
+							type="text"
+							id="lastName"
+							name="lastName"
+							placeholder="Enter your last name"
+							class="inputField"
+							required
+						/>
+					</label>
+					<label for="otherNames" class="labelContainer inputNameFlex">
+						Other Names:
+						<input
+							type="text"
+							id="otherNames"
+							name="otherNames"
+							placeholder="Enter your other names"
+							class="inputField"
+						/>
+					</label>
+					<label for="email" class="labelContainer inputNameFlex">
+						Email Address:
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Enter your email address"
+							class="inputField"
+							required
+						/>
+					</label>
+					<label for="phone" class="labelContainer inputNameFlex">
+						Phone Number:
+						<input
+							type="tel"
+							id="phone"
+							name="phone"
+							placeholder="Enter your phone number"
+							class="inputField"
+							required
+						/>
+					</label>
+					<label for="gender" class="labelContainer inputNameFlex">
+						Gender:
+						<select id="gender" name="gender" required class="inputField">
+							<option value="">Select Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+					</label>
+
+					<button type="submit" class="actButton">Submit</button>
+				</form>
+
+				<p id="validationMessages"></p>
+				<p id="formDetailsMessages"></p>
+			</div>
+		</div>
+
+		<script src="/public/index.js" type="module"></script>
+	</body>
+</html>
