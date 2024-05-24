@@ -5,7 +5,7 @@ const validateFormFields = require("./validationRules/formValidation");
 
 const PORT = 5050;
 
-const databasePath = path.join(__dirname, "database.json");
+const databasePath = process.env.DATABASE_URL || path.join(__dirname, "database.json");
 
 
 const server = http.createServer((req, res) => {
